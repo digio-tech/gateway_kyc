@@ -287,7 +287,7 @@ DigioEvent<br>`    `documentId: string;<br>`    `txnId: string;<br>`    `entity:
 ### Migration Guide
 
 - **4.0.3 => 4.0.6**
-    - implemented onGatewayEvent on DigioResponseListener
+    - implemented onGatewayEvent on DigioWorkflowResponseListener
     - add following dependencies
     - add  ```implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'``` to build.gradle
 
