@@ -1,4 +1,4 @@
-## Digio Android eSign/eMandate SDK
+## Digio Kyc Workflow SDK
 ### **How to Integrate?**
 1. Add it in your root build.gradle at the end of repositories:
 
