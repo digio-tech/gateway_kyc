@@ -15,15 +15,12 @@ plugins {
    id 'com.android.library' version '7.4.2' apply false
    id 'org.jetbrains.kotlin.android' version '1.7.20' apply false
    id 'androidx.navigation.safeargs' version '2.4.2' apply false
-   
-// optional crashlytics plugin if you want to report crashes of digio sdk, this will not conflict with app crashlytics'
    id 'com.google.gms.google-services' version '4.3.10' apply false
-   id 'com.google.firebase.crashlytics' version '2.8.1' apply false
 }
 
 ```
 
-2. Add the dependency:
+2. Add the dependency and view/data Binding build config:
 
 ```
 plugins {
@@ -41,8 +38,8 @@ android {
 }
 
 dependencies {
-    implementation 'com.github.digio-tech:gateway:v4.0.6'
-    implementation 'com.github.digio-tech:gateway_kyc:v4.0.6'
+    implementation 'com.github.digio-tech:gateway:v4.0.8'
+    implementation 'com.github.digio-tech:gateway_kyc:v4.0.8'
     
     // Other dependencies
     implementation 'androidx.appcompat:appcompat:1.6.1'
@@ -51,9 +48,7 @@ dependencies {
     implementation 'androidx.navigation:navigation-ui-ktx:2.5.3'
     // Added in version 4.0.6
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
-    // mandatory : crash handing by digio sdk. Does not conflict with app crash analytics.
-    implementation 'com.google.firebase:firebase-common-ktx:20.2.0'
-    implementation 'com.google.firebase:firebase-crashlytics-ktx:18.3.2'
+
     Following dependency is also not required if org.jetbrains.kotlin.android plugin version is 1.8.*
     implementation 'androidx.core:core-ktx:1.10.0'
     
@@ -274,7 +269,9 @@ DigioEvent<br>`    `documentId: string;<br>`    `txnId: string;<br>`    `entity:
 
 
 ### Change Logs
-
+- **Version 4.0.8 :**
+  - Removed firebase crashlytics
+  - For reverse penny drop added upi apps intent flow.
 
 - **Version 4.0.6 :**
     - Introduced webview connection error handling with in digio sdk.
@@ -285,7 +282,9 @@ DigioEvent<br>`    `documentId: string;<br>`    `txnId: string;<br>`    `entity:
 
 
 ### Migration Guide
-
+- **4.0.6 => 4.0.8**
+  - Remove firebase crashlytics dependencies and gradle plugin if not required by app or other sdk's.
+  
 - **4.0.3 => 4.0.6**
     - implemented onGatewayEvent on DigioWorkflowResponseListener
     - add following dependencies
