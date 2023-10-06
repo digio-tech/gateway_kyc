@@ -25,8 +25,6 @@ plugins {
 ```
 plugins {
    id 'com.android.application'
-   // optional plugin for digio crashlytics
-   id 'com.google.firebase.crashlytics'
 }
 
 android {
