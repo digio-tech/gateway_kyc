@@ -36,7 +36,7 @@ android {
 }
 
 dependencies {
-    implementation 'com.github.digio-tech:gateway:v4.0.8'
+    implementation 'com.github.digio-tech:gateway:v4.0.9'
     implementation 'com.github.digio-tech:gateway_kyc:v4.0.9'
     
     // Other dependencies
@@ -267,7 +267,7 @@ DigioEvent<br>`    `documentId: string;<br>`    `txnId: string;<br>`    `entity:
 
 
 ### Change Logs
-- **Version 4.0.8/4.0.9 :**
+- **Version 4.0.9 :**
   - Removed firebase crashlytics
   - For reverse penny drop added upi apps intent flow.
 
@@ -280,7 +280,7 @@ DigioEvent<br>`    `documentId: string;<br>`    `txnId: string;<br>`    `entity:
 
 
 ### Migration Guide
-- **4.0.6 => 4.0.8**
+- **4.0.6 => 4.0.9**
   - Remove firebase crashlytics dependencies and gradle plugin if not required by app or other sdk's.
   
 - **4.0.3 => 4.0.6**
