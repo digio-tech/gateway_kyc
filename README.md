@@ -36,7 +36,7 @@ android {
 }
 
 dependencies {
-    implementation 'com.github.digio-tech:gateway:v4.0.8'
+    implementation 'com.github.digio-tech:gateway:v4.0.9'
     implementation 'com.github.digio-tech:gateway_kyc:v4.0.8'
     
     // Other dependencies
@@ -267,6 +267,9 @@ DigioEvent<br>`    `documentId: string;<br>`    `txnId: string;<br>`    `entity:
 
 
 ### Change Logs
+- **Version 4.0.9**
+  - Fixed camera target resolution issue when used with flutter.
+  
 - **Version 4.0.8 :**
   - Removed firebase crashlytics
   - For reverse penny drop added upi apps intent flow.
