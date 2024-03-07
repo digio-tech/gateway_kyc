@@ -5,6 +5,6 @@
              http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>in.digio.sdk</groupId>
-    <artifactId>kyc_workflow</artifactId>
-    <version>4.0.11</version>
+    <artifactId>kyc_offline</artifactId>
+    <version>5.0.0</version>
 </project>
