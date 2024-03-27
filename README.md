@@ -37,7 +37,7 @@ android {
 
 dependencies {
     implementation 'com.github.digio-tech:gateway:v4.0.10'
-    implementation 'com.github.digio-tech:gateway_kyc:v4.0.13'
+    implementation 'com.github.digio-tech:gateway_kyc:v4.0.15'
     
     // Other dependencies
     implementation 'androidx.appcompat:appcompat:1.6.1'
@@ -267,6 +267,10 @@ DigioEvent<br>`    `documentId: string;<br>`    `txnId: string;<br>`    `entity:
 
 
 ### Change Logs
+
+- **Version 4.0.13 => 4.0.15**
+  - Partial screen on camera preview fixes 
+  
 - **Version 4.0.11 => 4.0.13**
   -  UIDAI OKYC changes
 
