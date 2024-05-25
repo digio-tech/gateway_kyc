@@ -75,6 +75,7 @@ dependencies {
 
 /** Required for geo tagging */
 <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
 
 /** Required for ID card analysis, selfie  and face match**/
