@@ -268,7 +268,10 @@ DigioEvent<br>`    `documentId: string;<br>`    `txnId: string;<br>`    `entity:
 
 
 ### Change Logs
-
+- **Version 4.0.17 => 4.0.18**
+    - 2 Way video KYC enabled
+    - UIDAI OKYC Changes added
+      
 - **Version 4.0.13 => 4.0.15**
   - Partial screen on camera preview fixes 
   
