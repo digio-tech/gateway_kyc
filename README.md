@@ -36,8 +36,8 @@ android {
 }
 
 dependencies {
-    implementation 'com.github.digio-tech:gateway:v4.0.15'
-    implementation 'com.github.digio-tech:gateway_kyc:v4.0.23'
+    implementation 'com.github.digio-tech:gateway:v4.0.22'
+    implementation 'com.github.digio-tech:gateway_kyc:v4.0.24'
     
     // Other dependencies
     implementation 'androidx.appcompat:appcompat:1.6.1'
